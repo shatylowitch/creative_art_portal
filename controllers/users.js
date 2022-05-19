@@ -13,16 +13,18 @@ const signup = async (req, res, next) => {
     } = req;
 
     const found = await usersModel.findOne ({ email });
-    if (!found) throw new Error("Clones are not allowed here. You have already registered with this email before");
-    const match = await bcrypt.match(password, 5);
-    if(!match) throw new Error("This password sucks. Try one more time");
+    console.log(found);
 
-    const user = await userModel.create({userName, email, password});
+    if (found) throw new Error("Clones are not allowed here. You have already registered with this email before");
+    const hash = await bcrypt.hash(password, 5);
+
+
+    const user = await usersModel.create({userName, email, password:hash});
     
-    const token = jwt.sign({id: found._id, email: found.email},
+    const token = jwt.sign({id:user._id, email: user.email},
     process.env.JWT_SECRET, 
     {
-    expiresIn: "120s",});
+    expiresIn: "120m",});
 
     res.json(token);
     } catch (err) {
