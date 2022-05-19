@@ -6,7 +6,8 @@ const getPosts = async (req, res, next) => {
     const posts = await postsModel.find({});
     res.json(posts);
   } catch (err) {
-    res.status(500).send(err.message);
+  //  res.status(500).send(err.message);
+  next(err);
   }
 };
 
