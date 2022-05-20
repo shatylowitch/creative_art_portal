@@ -36,6 +36,7 @@ const signup = async (req, res, next) => {
       body: { userName, email, password },
     } = req;
 
+
     const found = await usersModel.findOne({ email });
     if (found)
       throw new Error(
@@ -48,6 +49,7 @@ const signup = async (req, res, next) => {
     const token = jwt.sign({ id: user._id, email }, process.env.JWT_SECRET, {
       expiresIn: "120m",
     });
+
 
     res.json(token);
   } catch (err) {
