@@ -27,11 +27,12 @@ const getPost = async (req, res, next) => {
 const createPost = async (req, res, next) => {
   try {
     const {
-      body: { caption, base64 },
+      body: { caption, base64, description },
       user: { id },
     } = req;
     const { url } = await cloudinary.uploader.upload(base64);
-    postsModel.create({ caption, img: url, userId: id });
+
+    postsModel.create({ caption, img: url, user: id, description });
     res.json({ msg: "Uploaded" });
   } catch (error) {
     console.log(error);

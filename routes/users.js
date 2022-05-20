@@ -1,13 +1,10 @@
 
 const express = require("express");
-const {signup} = require("../controllers/users");
-//const verification = require("../middleware/verification")
+const {login, signup} = require("../controllers/users");
 
 const usersRouter = express.Router();
-
-usersRouter.get("/", (req, res) => {
-    res.json("users");
- });
+   
+usersRouter.post("/login", login);
 
 usersRouter.post("/signup", signup);
 
