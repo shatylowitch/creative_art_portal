@@ -17,6 +17,10 @@ app.use("/posts", postsRouter);
 
 app.use("/auth", usersRouter);
 
+
+
+
+
 app.listen(port, () => {
   console.log(`Port running on http://localhost:${port}`);
 });

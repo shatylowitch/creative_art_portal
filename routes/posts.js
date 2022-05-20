@@ -1,5 +1,5 @@
 const express = require("express");
-const token = require("../middleware/verification");
+const verifyToken = require("../middleware/verification");
 const {
   getPosts,
   getPost,
@@ -10,9 +10,7 @@ const {
 
 
 const postsRouter = express.Router();
-
-postsRouter.use(token);
-
+postsRouter.use(verifyToken);
 postsRouter.route("/").get(getPosts).post(createPost);
 postsRouter.route("/:id").get(getPost).put(updatePost).delete(deletePost);
 
