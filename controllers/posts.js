@@ -1,9 +1,10 @@
+const { populate } = require("../models/posts");
 const postsModel = require("../models/posts");
 const { cloudinary } = require("../utils/cloudinary");
 
 const getPosts = async (req, res, next) => {
   try {
-    const posts = await postsModel.find({});
+    const posts = await postsModel.find({}).populate("user");
     res.json(posts);
   } catch (err) {
   //  res.status(500).send(err.message);
@@ -17,7 +18,7 @@ const getPost = async (req, res, next) => {
       params: { id },
     } = req;
 
-    const post = await postsModel.findById(id);
+    const post = await postsModel.findById(id).populate("user");
     res.json(post);
   } catch (err) {
     res.status(500).send(err.message);
