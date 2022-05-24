@@ -8,9 +8,9 @@ const {
   deletePost,
 } = require("../controllers/posts");
 
-
 const postsRouter = express.Router();
-postsRouter.use(verifyToken);
+//Turn token authentication back on after user is created. this was turned off, for testing.
+// postsRouter.use(verifyToken);
 postsRouter.route("/").get(getPosts).post(createPost);
 postsRouter.route("/:id").get(getPost).put(updatePost).delete(deletePost);
 

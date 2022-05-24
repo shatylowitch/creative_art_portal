@@ -1,4 +1,3 @@
-const { populate } = require("../models/posts");
 const postsModel = require("../models/posts");
 const { cloudinary } = require("../utils/cloudinary");
 
@@ -7,8 +6,8 @@ const getPosts = async (req, res, next) => {
     const posts = await postsModel.find({}).populate("user");
     res.json(posts);
   } catch (err) {
-  //  res.status(500).send(err.message);
-  next(err);
+    //  res.status(500).send(err.message);
+    next(err);
   }
 };
 
