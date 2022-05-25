@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Posts from "./components/Posts";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <Route index element={<Posts />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </div>
