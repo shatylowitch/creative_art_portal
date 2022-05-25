@@ -20,7 +20,7 @@ function Posts() {
       {posts.map((element) => {
         return <p key={element._id}> {element._id}</p>;
       })}
-      <h1>Hi</h1>
+      <h1>This is our App</h1>
     </div>
   );
 }
