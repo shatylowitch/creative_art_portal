@@ -6,15 +6,19 @@ function Posts() {
 
   const getPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/posts");
+      const response = await axios.get(
+        `${process.env.REACT_APP_API_URL}/posts`
+      );
       setPosts(response.data);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
-    console.log(1);
     getPosts();
   }, []);
+
   return (
     <div>
       {posts.map((element) => {
