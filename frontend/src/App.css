@@ -57,6 +57,20 @@ p {
   gap: 2rem;
 }
 
+/* Sign up Section */
+.signup-container {
+  background-color: #650794;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
 /* Footer Section */
 #footer {
   background-color: #fff;
