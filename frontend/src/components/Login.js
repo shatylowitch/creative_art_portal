@@ -11,9 +11,11 @@ function Login() {
   const onSubmit = async (formData) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/auth/login`,
+        `${process.env.REACT_APP_API_URL}/auth/login`,
         formData
       );
+
+      localStorage.setItem("token", data);
 
       console.log(data);
     } catch (error) {

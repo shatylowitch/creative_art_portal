@@ -10,11 +10,12 @@ function Signup() {
 
   const onSubmit = async (formData) => {
     try {
-      console.log("hello");
-      const data = await axios.post(
-        `http://localhost:3000/auth/signup`,
+      const { data } = await axios.post(
+        `${process.env.REACT_APP_API_URL}/auth/signup`,
         formData
       );
+
+      localStorage.setItem("token", data);
 
       console.log("data", data);
     } catch (error) {
