@@ -5,6 +5,8 @@ import Posts from "./components/Posts";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import NotFound from "./components/NotFound";
+import Profile from "./components/Profile";
+import Protected from "./components/Protected";
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
           <Route index element={<Posts />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="protected" element={<Protected />}>
+            <Route path="profile" element={<Profile />} />
+          </Route>
 
           <Route path="*" element={<NotFound />} />
         </Route>
