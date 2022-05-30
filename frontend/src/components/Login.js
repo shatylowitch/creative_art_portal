@@ -32,8 +32,9 @@ function Login() {
 
   return (
     <>
+    <div className="form-container">
       {!isAuthenticated ? (
-        <div className="signup-container">
+        <div className="signup-container login-signup">
           <form className="signup-form" onSubmit={handleSubmit(onSubmit)}>
             {/* <label htmlFor="name">Name:</label>
         <input type="text" {...register("name", { required: true })} />
@@ -53,6 +54,7 @@ function Login() {
       ) : (
         <Navigate to="/" />
       )}
+      </div>
     </>
   );
 }

@@ -24,7 +24,7 @@ function Posts() {
       {posts.map((element) => {
         return <p key={element._id}> {element._id}</p>;
       })}
-      <h1>This is our App</h1>
+      <h1 className="m-5">This is our App</h1>
     </div>
   );
 }
