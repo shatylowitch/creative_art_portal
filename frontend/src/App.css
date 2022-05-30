@@ -1,5 +1,14 @@
 /* Body */
-body {
+/* * {
+  background: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg") center center;
+  min-height: 100vh;
+  width: 100%;
+} */
+
+html, body  {
+  /* height: 100%; */
+  scroll-behavior: smooth;
+  margin: 0;
   font-family: "Montserrat";
   text-align: center;
   color: #61dafb;
@@ -19,8 +28,9 @@ p {
   color: #8f8f8f;
 }
 
+
 /* Navigation Bar */
-/* .navbar {
+.navbar {
   background-color: #282c34;
   padding: 0 0 4.5rem;
 }
@@ -32,6 +42,8 @@ p {
 }
 
 .nav-item {
+  display: flex;
+  gap: 2rem;
   padding: 0 18px;
 }
 
@@ -39,7 +51,10 @@ p {
   font-family: "Montserrat";
   font-size: 1.2rem;
   font-weight: 400;
-} */
+  display: flex;
+  gap: 2rem;
+  padding: 0 18px;
+}
 
 .nav {
   display: flex;
@@ -52,31 +67,50 @@ p {
   background-color: #282c34;
 }
 
-.nav-items {
+/* Sign up Section */
+/* .form-container{
+
+} */
+
+/* div {
+  border: 2px solid red;
+} */
+
+.login-signup {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
 }
 
-/* Sign up Section */
-.signup-container {
-  background-color: #650794;
-  display: flex;
+ .signup-container {
   justify-content: center;
+  background: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg") center center;
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #650794; */
+  display: flex;
 }
 
 .signup-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
+} */
 
 /* Footer Section */
+/* .footer-container {
+  justify-content: center;
+  } */
 #footer {
-  background-color: #fff;
+  background:#282c34;
+  color: #61dafb;
   text-align: center;
+  justify-content: center;
 }
 
 .social-icon {
   margin: 20px 10px;
+  color: #61dafb;
 }

@@ -34,7 +34,7 @@ function Signup() {
   return (
     <>
       {!isAuthenticated ? (
-        <div className="signup-container">
+        <div className="signup-container ms-auto">
           <form className="signup-form" onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="name">Name:</label>
             <input type="text" {...register("name", { required: true })} />
@@ -42,7 +42,7 @@ function Signup() {
             <label htmlFor="email">Email:</label>
             <input type="email" {...register("email", { required: true })} />
             {errors.email && <div>Email is required</div>}
-            <label htmlFor="password">password:</label>
+            <label htmlFor="password">Password:</label>
             <input
               type="password"
               {...register("password", { required: true })}
