@@ -3,7 +3,9 @@ import jwt_decode from "jwt-decode";
 import { useForm } from "react-hook-form";
 import { login } from "../redux/reducers/auth";
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Navigate } from "react-router-dom";
+// import MUISignin from "./MUISignin";
+// import MUISignup from "./MUISignup";
 
 function Login() {
   const dispatch = useDispatch();
@@ -31,31 +33,59 @@ function Login() {
   };
 
   return (
-    <>
-    <div className="form-container">
-      {!isAuthenticated ? (
-        <div className="signup-container login-signup">
-          <form className="signup-form" onSubmit={handleSubmit(onSubmit)}>
-            {/* <label htmlFor="name">Name:</label>
-        <input type="text" {...register("name", { required: true })} />
-        {errors.name && <div>Name is required</div>} */}
-            <label htmlFor="email">Email:</label>
-            <input type="email" {...register("email", { required: true })} />
-            {errors.email && <div>Email is required</div>}
-            <label htmlFor="password">password:</label>
-            <input
-              type="password"
-              {...register("password", { required: true })}
-            />
-            {errors.password && <div>Password is required</div>}
-            <button type="submit">Login</button>
-          </form>
+    // <Router>
+    //   <div className="App">
+    //     <Route path="/" exact component={MUISignin} />
+    //     <Route exact path="/signup" component={MUISignup} />
+    //   </div>
+    // </Router>
+
+    <body className="text-center login-page">
+      <div className="daddydiv">
+        <div className="login-signup m-auto">
+          <main className="form-signin w-100 m-auto">
+            <form>
+              <img
+                className="mb-4"
+                url="/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/siora-photography-fz_aFtsHOWQ-unsplash.jpg"
+                alt=""
+                width="75"
+                height="75"
+              />
+              <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+
+              <div className="form-floating">
+                <input
+                  type="email"
+                  className="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div className="form-floating">
+                <input
+                  type="password"
+                  className="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <div className="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" /> Remember me
+                </label>
+              </div>
+              <button className="w-100 btn btn-lg btn-primary" type="submit">
+                Sign in
+              </button>
+            </form>
+          </main>
         </div>
-      ) : (
-        <Navigate to="/" />
-      )}
       </div>
-    </>
+    </body>
   );
 }
 

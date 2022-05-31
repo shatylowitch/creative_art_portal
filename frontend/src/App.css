@@ -75,18 +75,25 @@ p {
 /* div {
   border: 2px solid red;
 } */
+.login-page {
+  background: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/tim-mossholder-L7LF88Dzhus-unsplash.jpg") center center;
+  min-height: 100vh;
+  width: 100%;
+   background-color: #650794;
+}
 
 .login-signup {
   display: flex;
+  justify-content: center;
   align-items: center;
+  max-width: 20rem;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
 }
 
  .signup-container {
   justify-content: center;
-  background: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg") center center;
+  background: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/joshua-coleman-LboV5Qpqm1E-unsplash.jpg") center center;
   min-height: 100vh;
   width: 100%;
   /* background-color: #650794; */
@@ -108,6 +115,10 @@ p {
   color: #61dafb;
   text-align: center;
   justify-content: center;
+}
+
+.quotes {
+  color: #282c34;
 }
 
 .social-icon {

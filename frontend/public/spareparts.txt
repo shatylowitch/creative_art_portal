@@ -1,0 +1,228 @@
+This is the form I already have with the logic
+
+<>
+      <div className="form-container">
+        {!isAuthenticated ? (
+          <div className="signup-container login-signup">
+            <form className="signup-form" onSubmit={handleSubmit(onSubmit)}>
+              {/* <label htmlFor="name">Name:</label>
+        <input type="text" {...register("name", { required: true })} />
+        {errors.name && <div>Name is required</div>} */}
+              <label htmlFor="email">Email:</label>
+              <input type="email" {...register("email", { required: true })} />
+              {errors.email && <div>Email is required</div>}
+              <label htmlFor="password">password:</label>
+              <input
+                type="password"
+                {...register("password", { required: true })}
+              />
+              {errors.password && <div>Password is required</div>}
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        ) : (
+          <Navigate to="/" />
+        )}
+      </div>
+    </>
+
+---------------------------------------------------------
+
+
+This is the 2nd form (James suggestion)
+    <>
+    <div>
+    <div className="container">
+  <h2>Horizontal form</h2>
+  <form className="form-horizontal" action="/action_page.php">
+    <div className="form-group">
+      <label className="control-label col-sm-2" for="email">Email:</label>
+      <div className="col-sm-10">
+        <input type="email" className="form-control" id="email" placeholder="Enter email" name="email" />
+      </div>
+    </div>
+    <div className="form-group">
+      <label className="control-label col-sm-2" for="pwd">Password:</label>
+      <div className="col-sm-10">
+        <input type="password" className="form-control" id="pwd" placeholder="Enter password" name="pwd" />
+      </div>
+    </div>
+    <div className="form-group">
+      <div className="col-sm-offset-2 col-sm-10">
+        <div className="checkbox">
+          <label><input type="checkbox" name="remember" /> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div className="form-group">
+      <div className="col-sm-offset-2 col-sm-10">
+        <button type="submit" className="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+</>
+
+---------------
+
+react-dom.development.js:86 Warning: React does not recognize the `linkTo` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `linkto` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+    at a
+    at nav
+    at div
+    at Navbar (http://localhost:3001/static/js/bundle.js:1435:76)
+    at div
+    at Layout
+    at Routes (http://localhost:3001/static/js/bundle.js:71498:5)
+    at div
+    at App
+    at Provider (http://localhost:3001/static/js/bundle.js:67560:5)
+    at Router (http://localhost:3001/static/js/bundle.js:71431:15)
+    at BrowserRouter (http://localhost:3001/static/js/bundle.js:70240:5)
+printWarning @ react-dom.development.js:86
+router.ts:5 Uncaught Error: You cannot render a <Router> inside another <Router>. You should never have more than one in your app.
+    at invariant (router.ts:5:1)
+    at Router (components.tsx:180:1)
+    at renderWithHooks (react-dom.development.js:16175:1)
+    at mountIndeterminateComponent (react-dom.development.js:20913:1)
+    at beginWork (react-dom.development.js:22416:1)
+    at HTMLUnknownElement.callCallback (react-dom.development.js:4161:1)
+    at Object.invokeGuardedCallbackDev (react-dom.development.js:4210:1)
+    at invokeGuardedCallback (react-dom.development.js:4274:1)
+    at beginWork$1 (react-dom.development.js:27405:1)
+    at performUnitOfWork (react-dom.development.js:26513:1)
+react-dom.development.js:86 Warning: Invalid DOM property `class`. Did you mean `className`?
+    at h1
+    at div
+    at main
+    at div
+    at Footer
+    at div
+    at Layout
+    at Routes (http://localhost:3001/static/js/bundle.js:71498:5)
+    at div
+    at App
+    at Provider (http://localhost:3001/static/js/bundle.js:67560:5)
+    at Router (http://localhost:3001/static/js/bundle.js:71431:15)
+    at BrowserRouter (http://localhost:3001/static/js/bundle.js:70240:5)
+printWarning @ react-dom.development.js:86
+router.ts:5 Uncaught Error: You cannot render a <Router> inside another <Router>. You should never have more than one in your app.
+    at invariant (router.ts:5:1)
+    at Router (components.tsx:180:1)
+    at renderWithHooks (react-dom.development.js:16175:1)
+    at mountIndeterminateComponent (react-dom.development.js:20913:1)
+    at beginWork (react-dom.development.js:22416:1)
+    at HTMLUnknownElement.callCallback (react-dom.development.js:4161:1)
+    at Object.invokeGuardedCallbackDev (react-dom.development.js:4210:1)
+    at invokeGuardedCallback (react-dom.development.js:4274:1)
+    at beginWork$1 (react-dom.development.js:27405:1)
+    at performUnitOfWork (react-dom.development.js:26513:1)
+react-dom.development.js:18572 The above error occurred in the <Router> component:
+
+    at Router (http://localhost:3001/static/js/bundle.js:71431:15)
+    at BrowserRouter (http://localhost:3001/static/js/bundle.js:70240:5)
+    at Login (http://localhost:3001/static/js/bundle.js:583:76)
+    at Outlet (http://localhost:3001/static/js/bundle.js:71406:26)
+    at div
+    at Layout
+    at Routes (http://localhost:3001/static/js/bundle.js:71498:5)
+    at div
+    at App
+    at Provider (http://localhost:3001/static/js/bundle.js:67560:5)
+    at Router (http://localhost:3001/static/js/bundle.js:71431:15)
+    at BrowserRouter (http://localhost:3001/static/js/bundle.js:70240:5)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ react-dom.development.js:18572
+react-dom.development.js:26874 Uncaught Error: You cannot render a <Router> inside another <Router>. You should never have more than one in your app.
+    at invariant (router.ts:5:1)
+    at Router (components.tsx:180:1)
+    at renderWithHooks (react-dom.development.js:16175:1)
+    at mountIndeterminateComponent (react-dom.development.js:20913:1)
+    at beginWork (react-dom.development.js:22416:1)
+    at beginWork$1 (react-dom.development.js:27381:1)
+    at performUnitOfWork (react-dom.development.js:26513:1)
+    at workLoopSync (react-dom.development.js:26422:1)
+    at renderRootSync (react-dom.development.js:26390:1)
+    at recoverFromConcurrentError (react-dom.development.js:25806:1)
+2router.ts:5 Uncaught Error: You cannot render a <Router> inside another <Router>. You should never have more than one in your app.
+    at invariant (router.ts:5:1)
+    at Router (components.tsx:180:1)
+    at renderWithHooks (react-dom.development.js:16175:1)
+    at mountIndeterminateComponent (react-dom.development.js:20913:1)
+    at beginWork (react-dom.development.js:22416:1)
+    at HTMLUnknownElement.callCallback (react-dom.development.js:4161:1)
+    at Object.invokeGuardedCallbackDev (react-dom.development.js:4210:1)
+    at invokeGuardedCallback (react-dom.development.js:4274:1)
+    at beginWork$1 (react-dom.development.js:27405:1)
+    at performUnitOfWork (react-dom.development.js:26513:1)
+VM2760 react_devtools_backend.js:4026 The above error occurred in the <Router> component:
+
+    at Router (http://localhost:3001/static/js/bundle.js:71431:15)
+    at BrowserRouter (http://localhost:3001/static/js/bundle.js:70240:5)
+    at Login (http://localhost:3001/static/js/bundle.js:583:76)
+    at Outlet (http://localhost:3001/static/js/bundle.js:71406:26)
+    at div
+    at Layout
+    at Routes (http://localhost:3001/static/js/bundle.js:71498:5)
+    at div
+    at App
+    at Provider (http://localhost:3001/static/js/bundle.js:67560:5)
+    at Router (http://localhost:3001/static/js/bundle.js:71431:15)
+    at BrowserRouter (http://localhost:3001/static/js/bundle.js:70240:5)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+overrideMethod @ VM2760 react_devtools_backend.js:4026
+react-refresh-runtime.development.js:315 Uncaught Error: You cannot render a <Router> inside another <Router>. You should never have more than one in your app.
+    at invariant (router.ts:5:1)
+    at Router (components.tsx:180:1)
+    at renderWithHooks (react-dom.development.js:16175:1)
+    at mountIndeterminateComponent (react-dom.development.js:20913:1)
+    at beginWork (react-dom.development.js:22416:1)
+    at beginWork$1 (react-dom.development.js:27381:1)
+    at performUnitOfWork (react-dom.development.js:26513:1)
+    at workLoopSync (react-dom.development.js:26422:1)
+    at renderRootSync (react-dom.development.js:26390:1)
+    at recoverFromConcurrentError (react-dom.development.js:25806:1)
+2router.ts:5 Uncaught Error: You cannot render a <Router> inside another <Router>. You should never have more than one in your app.
+    at invariant (router.ts:5:1)
+    at Router (components.tsx:180:1)
+    at renderWithHooks (react-dom.development.js:16175:1)
+    at mountIndeterminateComponent (react-dom.development.js:20913:1)
+    at beginWork (react-dom.development.js:22416:1)
+    at HTMLUnknownElement.callCallback (react-dom.development.js:4161:1)
+    at Object.invokeGuardedCallbackDev (react-dom.development.js:4210:1)
+    at invokeGuardedCallback (react-dom.development.js:4274:1)
+    at beginWork$1 (react-dom.development.js:27405:1)
+    at performUnitOfWork (react-dom.development.js:26513:1)
+VM2760 react_devtools_backend.js:4026 The above error occurred in the <Router> component:
+
+    at Router (http://localhost:3001/static/js/bundle.js:71431:15)
+    at BrowserRouter (http://localhost:3001/static/js/bundle.js:70240:5)
+    at Login (http://localhost:3001/static/js/bundle.js:583:76)
+    at Outlet (http://localhost:3001/static/js/bundle.js:71406:26)
+    at div
+    at Layout
+    at Routes (http://localhost:3001/static/js/bundle.js:71498:5)
+    at div
+    at App
+    at Provider (http://localhost:3001/static/js/bundle.js:67560:5)
+    at Router (http://localhost:3001/static/js/bundle.js:71431:15)
+    at BrowserRouter (http://localhost:3001/static/js/bundle.js:70240:5)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+overrideMethod @ VM2760 react_devtools_backend.js:4026
+react-refresh-runtime.development.js:315 Uncaught Error: You cannot render a <Router> inside another <Router>. You should never have more than one in your app.
+    at invariant (router.ts:5:1)
+    at Router (components.tsx:180:1)
+    at renderWithHooks (react-dom.development.js:16175:1)
+    at mountIndeterminateComponent (react-dom.development.js:20913:1)
+    at beginWork (react-dom.development.js:22416:1)
+    at beginWork$1 (react-dom.development.js:27381:1)
+    at performUnitOfWork (react-dom.development.js:26513:1)
+    at workLoopSync (react-dom.development.js:26422:1)
+    at renderRootSync (react-dom.development.js:26390:1)
+    at recoverFromConcurrentError (react-dom.development.js:25806:1)
