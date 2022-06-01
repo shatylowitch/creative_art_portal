@@ -34,22 +34,50 @@ function Signup() {
   return (
     <>
       {!isAuthenticated ? (
-        <div className="signup-container ms-auto">
-          <form className="signup-form" onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor="name">Name:</label>
-            <input type="text" {...register("name", { required: true })} />
-            {errors.name && <div>Name is required</div>}
-            <label htmlFor="email">Email:</label>
-            <input type="email" {...register("email", { required: true })} />
-            {errors.email && <div>Email is required</div>}
-            <label htmlFor="password">Password:</label>
-            <input
-              type="password"
-              {...register("password", { required: true })}
-            />
-            {errors.password && <div>Password is required</div>}
-            <button type="submit">Submit</button>
-          </form>
+        <div className="login-signup m-auto text-center login-page">
+          <main className="w-100 m-auto">
+            <form
+              className="the-login-form d-flex flex-column gap-3"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <h1 className="mb-3 fw-normal">Please sign up</h1>
+
+              <div className="form-floating">
+                <input
+                  {...register("name", { required: true })}
+                  type="text"
+                  className="form-control"
+                  id="floatingInput"
+                  placeholder="your name"
+                />
+                <label for="floatingInput">Name</label>
+              </div>
+              <div className="form-floating">
+                <input
+                  {...register("email", { required: true })}
+                  type="email"
+                  className="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div className="form-floating">
+                <input
+                  {...register("password", { required: true })}
+                  type="password"
+                  className="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <button className="w-100 btn btn-lg btn-primary" type="submit">
+                Sign up
+              </button>
+            </form>
+          </main>
         </div>
       ) : (
         <Navigate to="/" />

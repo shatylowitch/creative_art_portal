@@ -2,17 +2,15 @@ import React from "react";
 
 function Footer() {
   return (
-    <div class="d-flex flex-column h-100">
-      <main class="flex-shrink-0">
-        <div class="container">
-          <h1 class="mt-5 quotes">
-            "Art is coming face to face with yourself" - Jackson Pallock
-          </h1>
+    <div className="d-flex flex-column h-100">
+      <main className="flex-shrink-0">
+        <div className="container">
+          <h1 className="mt-5 quotes">If you can see beauty in everything, you are an artist.</h1>
         </div>
       </main>
 
-      <footer class="footer mt-auto py-3 bg-dark">
-        <div class="container">
+      <footer className="footer mt-auto py-3 bg-dark">
+        <div className="container">
           <span>
             <div id="footer" className="footer-container">
               <div className="social-icons">
