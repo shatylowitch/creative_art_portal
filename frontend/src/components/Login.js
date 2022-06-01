@@ -4,8 +4,6 @@ import { useForm } from "react-hook-form";
 import { login } from "../redux/reducers/auth";
 import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter as Router, Route, Navigate } from "react-router-dom";
-// import MUISignin from "./MUISignin";
-// import MUISignup from "./MUISignup";
 
 function Login() {
   const dispatch = useDispatch();
@@ -33,29 +31,19 @@ function Login() {
   };
 
   return (
-    // <Router>
-    //   <div className="App">
-    //     <Route path="/" exact component={MUISignin} />
-    //     <Route exact path="/signup" component={MUISignup} />
-    //   </div>
-    // </Router>
-
-    <body className="text-center login-page">
-      <div className="daddydiv">
-        <div className="login-signup m-auto">
-          <main className="form-signin w-100 m-auto">
-            <form>
-              <img
-                className="mb-4"
-                url="/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/siora-photography-fz_aFtsHOWQ-unsplash.jpg"
-                alt=""
-                width="75"
-                height="75"
-              />
-              <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+    <>
+      {!isAuthenticated ? (
+        <div className="login-signup m-auto text-center login-page">
+          <main className="w-100 m-auto">
+            <form
+              className="the-login-form d-flex flex-column gap-3"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <h1 className="mb-3 fw-normal">Please sign in</h1>
 
               <div className="form-floating">
                 <input
+                  {...register("email", { required: true })}
                   type="email"
                   className="form-control"
                   id="floatingInput"
@@ -65,6 +53,7 @@ function Login() {
               </div>
               <div className="form-floating">
                 <input
+                  {...register("password", { required: true })}
                   type="password"
                   className="form-control"
                   id="floatingPassword"
@@ -84,8 +73,10 @@ function Login() {
             </form>
           </main>
         </div>
-      </div>
-    </body>
+      ) : (
+        <Navigate to="/" />
+      )}
+    </>
   );
 }
 
