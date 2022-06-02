@@ -20,11 +20,29 @@ function Posts() {
   }, []);
 
   return (
-    <div>
-      {posts.map((element) => {
-        return <p key={element._id}> {element._id}</p>;
-      })}
-      <h1 className="m-5">This is our App</h1>
+
+    <div className="container-fluid mh-100">
+      <div className="Hero-Section">
+        <div className=" gap-4">
+          <h2 className="">Welcome To The Art Portal</h2>
+          <h3>Share Your Art with the World!</h3>
+        </div>
+        <div>
+          <h4 className="about-us-description">
+            We are a community of artists from all around the world who are here
+            to create, share, admire, and participate in the beauty of art. For
+            Art is just an infinite amounts of expressions of ourselves. It
+            holds the peaceful power to shape the minds of nations & change in
+            time... the entire world!
+          </h4>
+        </div>
+      </div>
+
+      <div className="Gallery-Section">
+
+      </div>
+
+      <div className="Gallery-Section"></div>
     </div>
   );
 }

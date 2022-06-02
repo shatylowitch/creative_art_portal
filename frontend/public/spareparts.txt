@@ -94,3 +94,58 @@ This is the 2nd form (James suggestion)
   </div>
 </nav>
     </>
+
+
+    ---------
+    rondom text
+    <h4>
+            As human beings our constant desire is for connection... to connect
+            with the world around us in as we desire in any moment with complete
+            freedom. This is art. And this is what we are about. All forms of
+            the human connection & expression. We believ the huamn experience in
+            itself. This can be either known or unknown to the individual
+            themselves but that is besides the point. We have the ability to
+            connect through the means of communication... whatever the form may
+            be and however abstract or benign. To feel connection through
+            individual and communal experience... through thought, through
+            sound, through the artistic process either planned & prepared or
+            spontaneous... we all have those moments where creativity consumes
+            us and we burst with the Creative life force that fuels the passsion
+            to live. We are glad to have you hear. Please feel free to share
+            your heart and the only rule here that governs us is love from a
+            pure childlike perspective. If that's not clear enough, just be
+            kind, gentle with your words... leaving us to our final point. Love
+            art and share it but more importantly love one another and share
+            love.
+          </h4>
+
+          We have share a love for life
+            and art for life is art and we together & while sharing our own art
+            with one another are working towards shifting the consciousness of a
+            world that has for too long been in di-unity and disharmany. We
+            desire a world where we the people exist in unity and harmony with
+            each other where peace, joy and love reign supreme. We can do that
+            and still keep our diversity and uniqueness and art shows us this.
+
+
+
+
+
+                    i am card 
+                  i am a card card
+                iam a card i am card
+              i am i card i am a card
+            A Card ----------------------
+                ------
+            card |____ <div className="card" style="width: 18rem;">
+          <img
+            url="/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/scott-evans-f_CO1zX5g6o-unsplash.jpg"
+            alt="picture"
+          />
+          <div className="card-body">
+            <p className="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>

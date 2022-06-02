@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 function Layout() {
   return (
-    <div className="bg-pic">
+    <div className="bg-pic mh-80">
       <Navbar />
       <Outlet />
       <Footer />
