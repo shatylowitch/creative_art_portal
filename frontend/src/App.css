@@ -1,79 +1,42 @@
-html, body  {
-  scroll-behavior: smooth;
-  margin: 0;
-  font-family: "Montserrat";
-  text-align: center;
-  color: #61dafb;
+/* Post / Landing Page */
+.container-fluid {
+  background: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg");
 }
 
-h1,
-h2,
-h3,
-h5,
-h6 {
-  font-family: "Montserrat-Black"900;
-  font-weight: bold;
+.Hero-Section {
+/* justify-content: center; */
+color: #282c34;
+/* height: 300px;
+width: 300px; */
 }
 
-p {
-  font-family: "Montserrat";
-  color: #8f8f8f;
+.about-us-description {
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 3.5px;
+  color: #282c34;
 }
 
-
-/* Navigation Bar */
-
-.navbar {
-  background-color: #282c34;
-  padding: 0 0 4.5rem;
-}
-
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.nav-item {
-  display: flex;
-  gap: 2rem;
-  padding: 0 18px;
-}
-
-.nav-link {
-  font-family: "Montserrat";
-  font-size: 1.2rem;
-  font-weight: 400;
-  display: flex;
-  gap: 2rem;
-  padding: 0 18px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
-  color: #fff;
-  background-color: #282c34;
-}
+/* Gallery Section */
 
 
-/* ------ Just enable For seeing  CSS Grid Layout ------- */
 
-/* div {
+
+
+
+
+/* ------ Just enable For seeing  CSS Grid Layout James specialty------- */
+
+div {
   border: 2px solid red;
-} */
+}
 
 /* ------ Just enable For seeing  CSS Grid Layout ------- */
 
 
 
 /* Login Page */
-
-/* background: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg"); */
 
 .login-page {
   min-height: 100vh;
@@ -119,7 +82,7 @@ padding-top: 1.5 rem;
   justify-content: center;
   } */
 #footer {
-  background:#282c34;
+  background:#282c3400;
   color: #61dafb;
   text-align: center;
   justify-content: center;

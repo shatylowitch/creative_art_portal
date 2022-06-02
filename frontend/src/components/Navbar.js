@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <div className="navigation-section">
-      <nav className="navbar navbar-expand-lg navbar-dark">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light ">
         <a className="navbar-brand" linkTo="/">
           CREATIVE ART PORTAL
         </a>
