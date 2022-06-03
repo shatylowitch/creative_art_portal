@@ -5,7 +5,7 @@ function Footer() {
     <div className="d-flex flex-column h-100">
       <main className="flex-shrink-0">
         <div className="container">
-          <h1 className="mt-5 quotes">If you can see beauty in everything, you are an artist.</h1>
+          <h1 className="mt-5 quotes text-center">If you can see beauty in everything, you are an artist.</h1>
         </div>
       </main>
 

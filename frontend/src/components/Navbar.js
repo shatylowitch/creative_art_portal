@@ -8,10 +8,10 @@ function Navbar() {
 
   return (
     <div className="navigation-section">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light ">
-        <a className="navbar-brand" linkTo="/">
-          CREATIVE ART PORTAL
-        </a>
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark d-flex">
+        <Link className="navbar-brand" to="/">
+          <div className="app-logo">CREATIVE ART PORTAL</div>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,7 +25,7 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <div className="navbar-nav ms-auto">
-            <div className="nav-link">
+            <div className="nav-item nav-link m-5 ">
               <Link to="/protected/profile">Profile</Link>
               {!isAuthenticated ? (
                 <>

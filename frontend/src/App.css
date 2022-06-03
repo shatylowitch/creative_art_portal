@@ -1,6 +1,12 @@
 /* Post / Landing Page */
-.container-fluid {
-  background: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg");
+
+.navbar-brand {
+  color: #61dafb;
+}
+
+.app-logo {
+  color: #61dafb;
+text-shadow: cornsilk;
 }
 
 .Hero-Section {
@@ -9,6 +15,7 @@ color: #282c34;
 /* height: 300px;
 width: 300px; */
 }
+
 
 .about-us-description {
   justify-content: center;
