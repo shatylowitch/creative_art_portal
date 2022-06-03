@@ -8,10 +8,11 @@ import NotFound from "./components/NotFound";
 import Profile from "./components/Profile";
 import Protected from "./components/Protected";
 import Gallery from "./components/Gallery";
+import Artists from "./components/Artists";
 
 function App() {
   return (
-    <div className="mh-100 bg-for-everything">
+    <div className="mh-100">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Posts />} />
@@ -21,6 +22,7 @@ function App() {
             <Route path="profile" element={<Profile />} />
           </Route>
           <Route path="gallery" element={<Gallery />} />
+          <Route path="artists" element={<Artists />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

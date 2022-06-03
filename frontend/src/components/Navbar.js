@@ -9,8 +9,9 @@ function Navbar() {
   return (
     <div className="navigation-section">
       <nav className="navbar navbar-expand-lg navbar-light bg-dark d-flex">
+        <div className="container-fluid mx-5">
         <Link className="navbar-brand" to="/">
-          <div className="app-logo">CREATIVE ART PORTAL</div>
+          <div className="app-logo fs-1">CREATIVE ART PORTAL</div>
         </Link>
         <button
           className="navbar-toggler"
@@ -25,7 +26,7 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <div className="navbar-nav ms-auto">
-            <div className="nav-item nav-link m-5 ">
+            <div className="d-flex gap-4 nav-item nav-link m-5 fs-3">
               <Link to="/protected/profile">Profile</Link>
               {!isAuthenticated ? (
                 <>
@@ -45,6 +46,7 @@ function Navbar() {
               )}
             </div>
           </div>
+        </div>
         </div>
       </nav>
     </div>

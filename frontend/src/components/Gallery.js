@@ -1,56 +1,32 @@
-import react from "react";
 import GalleryCard from "./GalleryCard";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function Gallery() {
+  const [galleryCards, setGalleryCards] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/posts/")
+      .then((res) => setGalleryCards(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
-    <div className="row p-5">
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
-      </div>
-      <div className="col-3 text-center">
-        <GalleryCard />
+    <div class="container">
+      <div class="row photos">
+        <>
+          {galleryCards &&
+            galleryCards.map((card, index) => {
+              return (
+                <GalleryCard
+                  id={card._id}
+                  caption={card.caption}
+                  description={card.description}
+                />
+              );
+            })}
+        </>
       </div>
     </div>
   );

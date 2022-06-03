@@ -1,7 +1,18 @@
-.bg-for-everything {
+/* .bg-for-everything {
   background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg");
+} */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+  font-family: 'Josefin Sans', cursive;
 }
 
+.custom-size-app {
+  max-width: 85vw;
+  border: 2px solid brown;
+}
 /* Post / Landing Page */
 
 .navbar-brand {
@@ -20,13 +31,13 @@ color: #282c34;
 width: 300px; */
 }
 
-
 .about-us-description {
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-top: 3.5px;
-  color: #282c34;
+max-width: 50rem;
+}
+
+.card-img-top {
+  height: 240px;
+
 }
 
 /* Gallery Section */
