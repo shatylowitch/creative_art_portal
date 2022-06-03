@@ -32,106 +32,108 @@ function Posts() {
         <div className="text-center mg-5 p-5">
           <h2 className="">Welcome To The Art Portal</h2>
           <h3>Share Your Art with the World!</h3>
-          <h4 className="about-us-description">
+          <p className="about-us-description fs-5 mx-auto my-3">
             We are a community of artists from all around the world who are here
             to create, share, admire, and participate in the beauty of art. For
             Art is just an infinite amounts of expressions of ourselves. It
             holds the peaceful power to shape the minds of nations & change in
             time... the entire world!
-          </h4>
+          </p>
         </div>
       </div>
 
-      <div className="d-flex gap-2 mg-5 p-5 gap-5 justify-content-evenly">
-        <div className="card">
-          <img
-            src="/images/dippyaman-nath-WTjoXtFZ2fw-unsplash.jpg"
-            className="card-img-top"
-            alt="..."
-          />
-          <div className="card-body text-center">
-            <h5 className="card-title">Photoshop</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <button
-              onClick={() => {
-                navigate("/gallery/photoshop");
-              }}
-              className="btn btn-primary"
-            >
-              View More
-            </button>
+      <div className="container-fluid">
+        <div className="d-flex mg-5 p-5 gap-5 justify-content-evenly">
+          <div className="card">
+            <img
+              src="/images/dippyaman-nath-WTjoXtFZ2fw-unsplash.jpg"
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body text-center">
+              <h5 className="card-title">Photoshop</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                onClick={() => {
+                  navigate("/gallery/photoshop");
+                }}
+                className="btn btn-primary"
+              >
+                View More
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="card">
-          <img
-            src="/images/gradienta-el5ZXkPvd0o-unsplash.jpg"
-            className="card-img-top"
-            alt="..."
-          />
-          <div className="card-body text-center">
-            <h5 className="card-title">Illustrator</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <button
-              onClick={() => {
-                navigate("/gallery/illustrator");
-              }}
-              className="btn btn-primary"
-            >
-              View More
-            </button>
+          <div className="card">
+            <img
+              src="/images/gradienta-el5ZXkPvd0o-unsplash.jpg"
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body text-center">
+              <h5 className="card-title">Illustrator</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                onClick={() => {
+                  navigate("/gallery/illustrator");
+                }}
+                className="btn btn-primary"
+              >
+                View More
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="card">
-          <img
-            src="/images/tim-mossholder-YMtLdvIQtu0-unsplash.jpg"
-            className="card-img-top"
-            alt="..."
-          />
-          <div className="card-body text-center">
-            <h5 className="card-title">Photography</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <button
-              onClick={() => {
-                navigate("/gallery/photography");
-              }}
-              className="btn btn-primary"
-            >
-              View More
-            </button>
+          <div className="card">
+            <img
+              src="/images/trevor-gerzen-fMgs4F9fTbU-unsplash.jpg"
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body text-center">
+              <h5 className="card-title">Photography</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                onClick={() => {
+                  navigate("/gallery/photography");
+                }}
+                className="btn btn-primary"
+              >
+                View More
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="card">
-          <img
-            src="/images/elena-mozhvilo-girJ8wuVrCA-unsplash.jpg"
-            className="card-img-top"
-            alt="..."
-          />
-          <div className="card-body text-center">
-            <h5 className="card-title">Painting</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <button
-              onClick={() => {
-                navigate("/gallery/painting");
-              }}
-              className="btn btn-primary"
-            >
-              View More
-            </button>
+          <div className="card">
+            <img
+              src="/images/elena-mozhvilo-girJ8wuVrCA-unsplash.jpg"
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body text-center">
+              <h5 className="card-title">Painting</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                onClick={() => {
+                  navigate("/gallery/painting");
+                }}
+                className="btn btn-primary"
+              >
+                View More
+              </button>
+            </div>
           </div>
         </div>
       </div>
