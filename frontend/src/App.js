@@ -11,7 +11,7 @@ import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div className="mh-100">
+    <div className="mh-100 bg-for-everything">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Posts />} />

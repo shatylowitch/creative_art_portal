@@ -2,7 +2,7 @@ function Carousel() {
   return (
     <div
       id="carouselDark"
-      className="carousel carousel-dark slide w-50"
+      className="carousel carousel-dark slide w-50 m-5"
       data-bs-ride="carousel"
     >
       <ol className="carousel-indicators">
