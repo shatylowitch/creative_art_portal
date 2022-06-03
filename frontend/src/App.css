@@ -1,3 +1,7 @@
+.bg-for-everything {
+  background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg");
+}
+
 /* Post / Landing Page */
 
 .navbar-brand {
@@ -34,10 +38,10 @@ width: 300px; */
 
 
 /* ------ Just enable For seeing  CSS Grid Layout James specialty------- */
-
+/* 
 div {
   border: 2px solid red;
-}
+} */
 
 /* ------ Just enable For seeing  CSS Grid Layout ------- */
 
