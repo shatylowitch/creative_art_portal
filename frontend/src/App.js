@@ -7,10 +7,11 @@ import Signup from "./components/Signup";
 import NotFound from "./components/NotFound";
 import Profile from "./components/Profile";
 import Protected from "./components/Protected";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div className="">
+    <div className="mh-100">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Posts />} />
@@ -19,7 +20,7 @@ function App() {
           <Route path="protected" element={<Protected />}>
             <Route path="profile" element={<Profile />} />
           </Route>
-
+          <Route path="gallery" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
