@@ -2,6 +2,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 
+
 function Profile() {
   const user = useSelector((state) => {
     return state.auth.user;
@@ -19,8 +20,8 @@ function Profile() {
   }, []);
 
   return (
-    <div className="container-fluid d-flex justify-content-center my-5">
-      <h1 className="">Logged in as {user.email}</h1>
+    <div className="container-fluid mh-100 d-flex justify-content-center my-5">
+      <h1 className="">{user.email}</h1>
     </div>
   );
 }

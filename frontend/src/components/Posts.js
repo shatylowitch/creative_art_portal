@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Carousel from "./Carousel";
 import Profile from "./Profile";
+import UserCard from "./UserCard";
 
 function Posts() {
   const [posts, setPosts] = useState([]);
@@ -24,7 +25,7 @@ function Posts() {
 
   return (
     <>
-        <Profile />
+      <Profile />
       <div className="container-fluid mh-100">
         <div className="Hero-Section row-5 justify-content-center">
           <div className="gap-4 text-center col-12">

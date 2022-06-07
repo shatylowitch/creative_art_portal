@@ -1,18 +1,19 @@
 function Carousel() {
   return (
     <div
-      id="carouselDark"
-      className="carousel carousel-dark slide w-50 my-5 mx-auto"
+      id="carouselLight"
+      className="carousel slide w-50 my-5 mx-auto thecarousel"
       data-bs-ride="carousel"
     >
       <ol className="carousel-indicators">
         <li
-          data-bs-target="#carouselDark"
+          data-bs-target="#carouselLight"
           data-bs-slide-to="0"
           className="active"
         ></li>
-        <li data-bs-target="#carouselDark" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carouselDark" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselLight" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselLight" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselDark" data-bs-slide-to="3"></li>
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -21,7 +22,7 @@ function Carousel() {
             className="d-block w-100 h-50"
             alt="Slide 1"
           />
-          <div className="carousel-caption d-none d-sm-block">
+          <div className="carousel-caption d-none d-sm-block carousel-light">
             <h5>First slide label</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
@@ -32,7 +33,7 @@ function Carousel() {
             className="d-block w-100 h-50"
             alt="Slide 2"
           />
-          <div className="carousel-caption d-none d-sm-block">
+          <div className="carousel-caption d-none d-sm-block carousel-light">
             <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
@@ -43,7 +44,7 @@ function Carousel() {
             className="d-block w-100 h-50"
             alt="Slide 3"
           />
-          <div className="carousel-caption d-none d-sm-block">
+          <div className="carousel-caption d-none d-sm-block carousel-dark">
             <h5>Third slide label</h5>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
@@ -53,7 +54,7 @@ function Carousel() {
       </div>
       <a
         className="carousel-control-prev"
-        href="#carouselDark"
+        href="#carouselLight"
         role="button"
         data-bs-slide="prev"
       >
@@ -62,7 +63,7 @@ function Carousel() {
       </a>
       <a
         className="carousel-control-next"
-        href="#carouselDark"
+        href="#carouselLight"
         role="button"
         data-bs-slide="next"
       >

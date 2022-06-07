@@ -1,16 +1,29 @@
-/* .bg-for-everything {
-  background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg");
-} */
-
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Ubuntu:wght@300&display=swap');
 
-body {
-  font-family: 'Josefin Sans', cursive;
+.app-logo {
+  font-family: 'Fredoka One', cursive;
+}
+
+.links {
+font-family: 'Montserrat', sans-serif;
+}
+
+body, h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .custom-size-app {
   max-width: 85vw;
+}
+
+/* Page Backgrounds */
+.appbackground {
+  background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg");
+}
+
+.thecarousel {
+  color: #fff;
 }
 /* Post / Landing Page */
 
