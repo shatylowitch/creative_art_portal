@@ -10,43 +10,45 @@ function Navbar() {
     <div className="navigation-section">
       <nav className="navbar navbar-expand-lg navbar-light bg-dark d-flex">
         <div className="container-fluid mx-5">
-        <Link className="navbar-brand" to="/">
-          <div className="app-logo fs-1">CREATIVE ART PORTAL</div>
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <div className="navbar-nav ms-auto">
-            <div className="d-flex gap-4 nav-item nav-link m-5 fs-3">
-              <Link to="/protected/profile">Profile</Link>
-              {!isAuthenticated ? (
-                <>
-                  <Link to="/login">Login</Link>
-                  <Link to="/signup">Signup</Link>
-                </>
-              ) : (
-                <Link
-                  to="/"
-                  onClick={() => {
-                    localStorage.removeItem("token");
-                    dispatch(logout());
-                  }}
-                >
-                  Logout
-                </Link>
-              )}
+          <Link className="navbar-brand" to="/">
+            <div className="app-logo fs-1">CREATIVE ART PORTAL</div>
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div className="navbar-nav ms-auto">
+              <div className="d-flex gap-4 nav-item nav-link m-3 fs-3">
+                {!isAuthenticated ? (
+                  <>
+                    <Link to="/login">Login</Link>
+                    <Link to="/signup">Signup</Link>
+                  </>
+                ) : (
+                  <>
+                    <Link to="/protected/profile">Profile</Link>
+                    <Link
+                      to="/"
+                      onClick={() => {
+                        localStorage.removeItem("token");
+                        dispatch(logout());
+                      }}
+                    >
+                      Logout
+                    </Link>
+                  </>
+                )}
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </nav>
     </div>

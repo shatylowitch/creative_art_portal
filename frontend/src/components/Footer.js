@@ -9,7 +9,7 @@ function Footer() {
         </div>
       </main>
 
-      <footer className="footer mt-auto py-3 bg-dark">
+      <footer className="footer mt-auto py-3 bg-dark mt-2">
         <div className="container">
           <span>
             <div id="footer" className="footer-container">

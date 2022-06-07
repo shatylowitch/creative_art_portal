@@ -32,7 +32,7 @@ function Posts() {
         <div className="text-center mg-5 p-5">
           <h2 className="">Welcome To The Art Portal</h2>
           <h3>Share Your Art with the World!</h3>
-          <p className="about-us-description fs-5 mx-auto my-3">
+          <p className="about-us-description fs-5 mx-auto my-3 mt-5">
             We are a community of artists from all around the world who are here
             to create, share, admire, and participate in the beauty of art. For
             Art is just an infinite amounts of expressions of ourselves. It
@@ -58,7 +58,7 @@ function Posts() {
               </p>
               <button
                 onClick={() => {
-                  navigate("/gallery/photoshop");
+                  navigate("/gallery?category=photoshop");
                 }}
                 className="btn btn-primary"
               >
@@ -81,7 +81,7 @@ function Posts() {
               </p>
               <button
                 onClick={() => {
-                  navigate("/gallery/illustrator");
+                  navigate("/gallery?category=illustrator");
                 }}
                 className="btn btn-primary"
               >
@@ -104,7 +104,7 @@ function Posts() {
               </p>
               <button
                 onClick={() => {
-                  navigate("/gallery/photography");
+                  navigate("/gallery?category=photography");
                 }}
                 className="btn btn-primary"
               >
@@ -127,7 +127,7 @@ function Posts() {
               </p>
               <button
                 onClick={() => {
-                  navigate("/gallery/painting");
+                  navigate("/gallery?category=painting");
                 }}
                 className="btn btn-primary"
               >

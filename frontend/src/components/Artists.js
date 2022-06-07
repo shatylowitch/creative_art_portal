@@ -1,4 +1,5 @@
 function Artists() {
+ 
   return (
     <div className="row row-cols-1 row-cols-sm-2 g-3">
       <div className="col">

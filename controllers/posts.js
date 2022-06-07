@@ -3,7 +3,12 @@ const { cloudinary } = require("../utils/cloudinary");
 
 const getPosts = async (req, res, next) => {
   try {
-    const posts = await postsModel.find({}).populate("user");
+    const {
+      query: { category },
+    } = req;
+    const query = category ? { category } : {};
+    console.log(query, category);
+    const posts = await postsModel.find(query);
     res.json(posts);
   } catch (err) {
     //  res.status(500).send(err.message);
@@ -27,12 +32,17 @@ const getPost = async (req, res, next) => {
 const createPost = async (req, res, next) => {
   try {
     const {
-      body: { caption, base64, description },
+      body: { caption, base64, description, category },
       user: { id },
     } = req;
-    const { url } = await cloudinary.uploader.upload(base64);
 
-    postsModel.create({ caption, img: url, user: id, description });
+    postsModel.create({
+      caption,
+      img: base64,
+      user: id,
+      description,
+      category,
+    });
     res.json({ msg: "Uploaded" });
   } catch (error) {
     console.log(error);
