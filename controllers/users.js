@@ -55,7 +55,21 @@ const signup = async (req, res, next) => {
   }
 };
 
+const getUser = async (req, res, next) => {
+  try {
+    const {
+      params: { id },
+    } = req;
+
+    const user = await usersModel.findById(id);
+    res.json(user);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+};
+
 module.exports = {
   login,
   signup,
+  getUser,
 };

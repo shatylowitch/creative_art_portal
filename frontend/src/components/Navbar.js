@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../redux/reducers/auth";
 
@@ -36,9 +36,10 @@ function Navbar() {
                   <>
                     <Link to="/protected/profile">Profile</Link>
                     <Link
-                      to="/"
+                      to="login"
                       onClick={() => {
                         localStorage.removeItem("token");
+
                         dispatch(logout());
                       }}
                     >
