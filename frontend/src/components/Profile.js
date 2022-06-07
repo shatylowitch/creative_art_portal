@@ -19,8 +19,8 @@ function Profile() {
   }, []);
 
   return (
-    <div>
-      <h1>Welcome back to your Profile!</h1>
+    <div className="container-fluid d-flex justify-content-center my-5">
+      <h1 className="">Logged in as {user.email}</h1>
     </div>
   );
 }
