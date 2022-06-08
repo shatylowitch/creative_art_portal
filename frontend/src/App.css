@@ -1,8 +1,18 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Ubuntu:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+
 .app-logo {
   font-family: 'Fredoka One', cursive;
+}
+
+.Greeting {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-size: xx-large; */
+  color: #282c34;
 }
 
 .links {
@@ -17,6 +27,12 @@ body, h1, h2, h3, h4, h5 {
   max-width: 85vw;
 }
 
+.Upload {
+  font-family: 'Faster One', cursive;
+  /* font-size: xx-large; */
+  color: #282c34;
+}
+
 /* Page Backgrounds */
 .appbackground {
   background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg");
@@ -26,6 +42,18 @@ body, h1, h2, h3, h4, h5 {
 
 .Gallery-Section {
   /* background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/william-arndt-MFLjLt2MojM-unsplash.jpg"); */
+}
+
+.border-container {
+  /* border: solid 2px red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.gallery-card-img{
+  width: 200px;
+  margin: 1rem;
 }
 
 /* Main Gallery CSS */
@@ -58,13 +86,11 @@ body, h1, h2, h3, h4, h5 {
 	grid-row: span 2;
 }
 
-/* .user-profile {
-  background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/pawel-czerwinski-HkAy-PdSqeA-unsplash.jpg");
-} */
-
 .thecarousel {
   color: #fff;
 }
+
+
 /* Post / Landing Page */
 
 .navbar-brand {
@@ -78,10 +104,7 @@ text-shadow: cornsilk;
 
 
 .Hero-Section {
-/* justify-content: center; */
 color: #282c34;
-/* height: 300px;
-width: 300px; */
 }
 
 .about-us-description {
@@ -92,14 +115,6 @@ max-width: 50rem;
   height: 240px;
 
 }
-
-/* Gallery Section */
-
-
-
-
-
-
 
 /* ------ Just enable For seeing  CSS Grid Layout James specialty------- */
 /* 
@@ -138,24 +153,15 @@ padding-top: 1.5 rem;
 
 
 /* Signup Page*/
-
  .signup-container {
   justify-content: center;
   min-height: 100;
   width: 100;
   background-color: #650794;
 }
-/* 
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}  */
+
 
 /* Footer Section */
-/* .footer-container {
-  justify-content: center;
-  } */
 #footer {
   background:#282c3400;
   color: #61dafb;
@@ -174,18 +180,9 @@ padding-top: 1.5 rem;
   color: #61dafb;
 }
 
-/* .social-icons {
-/* width: 100%; */
-padding: 0 0 0 0;
-
 .container {
   width: 100%;
   margin-left: 0 0 0;
   padding: 0 0 0 0;
 }
 
-/* Gallery Section */
-/* .gallery-cards {
-
-
-} */
