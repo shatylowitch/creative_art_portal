@@ -1,1 +1,1 @@
-web: npm run start-prd
+web: node index.js
