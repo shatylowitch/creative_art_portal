@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import GalleryCard from "./GalleryCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import CTA from "./CTA";
 
 function Gallery() {
   let [searchParams, setSearchParams] = useSearchParams();
@@ -20,6 +21,7 @@ function Gallery() {
       .catch((err) => console.log(err));
   }, [category]);
 
+  console.log("gallery cards", galleryCards);
   return (
     <div class="container Gallery-Section">
       <div className="d-flex mx-auto gap-4 justify-content-center my-5 border-info">
@@ -69,7 +71,8 @@ function Gallery() {
           Painting
         </button>
       </div>
-      <div class="row photos text-center">
+      {/* row photos text-center */}
+      <div className="border-container">
         <>
           {galleryCards &&
             galleryCards.map((card, index) => {
@@ -86,6 +89,7 @@ function Gallery() {
             })}
         </>
       </div>
+      <CTA />
     </div>
   );
 }
