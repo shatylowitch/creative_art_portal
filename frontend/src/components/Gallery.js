@@ -21,8 +21,8 @@ function Gallery() {
   }, [category]);
 
   return (
-    <div class="container">
-      <div className="d-flex mx-auto gap-4 justify-content-center my-5">
+    <div class="container Gallery-Section">
+      <div className="d-flex mx-auto gap-4 justify-content-center my-5 border-info">
         <button
           className="btn btn-primary"
           onClick={() => {
@@ -69,7 +69,7 @@ function Gallery() {
           Painting
         </button>
       </div>
-      <div class="row photos">
+      <div class="row photos text-center">
         <>
           {galleryCards &&
             galleryCards.map((card, index) => {
@@ -78,6 +78,9 @@ function Gallery() {
                   id={card._id}
                   caption={card.caption}
                   description={card.description}
+                  img={card.img}
+                  user={card.user}
+                  category={card.category}
                 />
               );
             })}
