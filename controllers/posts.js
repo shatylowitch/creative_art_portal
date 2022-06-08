@@ -36,14 +36,14 @@ const createPost = async (req, res, next) => {
       user: { id },
     } = req;
 
-    postsModel.create({
+    const post = await postsModel.create({
       caption,
       img: base64,
       user: id,
       description,
       category,
     });
-    res.json({ msg: "Uploaded" });
+    res.json(post);
   } catch (error) {
     console.log(error);
     res.status(500).json({ err: "Something went wrong" });
