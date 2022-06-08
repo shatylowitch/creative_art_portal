@@ -23,14 +23,16 @@ function Profile() {
 
   return (
     <>
+      <div className="Greeting m-5">
+        <AboutYou profile={profile} />
+      </div>
       <div className="container-fluid mh-100 d-flex justify-content-center my-5 user-profile mw-100">
         <div>
-          <h1 className="text-center my-5">Upload Some Art.</h1>
+          <h1 className="text-center mt-3 my-3 Upload">Upload Some Art.</h1>
           <Form />
         </div>
       </div>
       <div>
-        <AboutYou />
         <DownloadAppBtns />
       </div>
     </>

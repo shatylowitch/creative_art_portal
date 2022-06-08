@@ -1,8 +1,14 @@
-function AboutYou() {
+function AboutYou({ profile }) {
+  console.log(profile);
   return (
     <div className="container text-center mg-5">
-      <h2 class="section-heading">About You</h2>
-      <p>If You Feel Like It Write Something About Yourself.</p>
+      {profile && (
+        <>
+          <h2 class="section-heading Greeting my-5">
+            Welcome back {profile.email}!
+          </h2>
+        </>
+      )}
     </div>
   );
 }

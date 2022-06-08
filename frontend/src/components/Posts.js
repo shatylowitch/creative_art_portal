@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Carousel from "./Carousel";
 import Profile from "./Profile";
-import UserCard from "./UserCard";
 
 function Posts() {
   const [posts, setPosts] = useState([]);

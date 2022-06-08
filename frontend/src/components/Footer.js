@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="d-flex flex-column h-100">
+    <div className="d-flex flex-column h-100 mb-5">
       <main className="flex-shrink-0">
         <div className="container">
           <h1 className="mt-5 quotes text-center">
