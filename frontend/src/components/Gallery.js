@@ -18,6 +18,8 @@ function Gallery() {
       .catch((err) => console.log(err));
   }, []);
 
+console.log('gallerycards', galleryCards)
+
   return (
     <div class="container">
       <div class="row photos">
