@@ -15,7 +15,9 @@ function Gallery() {
     console.log("category changed");
     axios
       .get(
-        `http://localhost:3000/posts${category ? "?category=" + category : ""}`
+        `${process.env.REACT_APP_API_URL}/posts${
+          category ? "?category=" + category : ""
+        }`
       )
       .then((res) => setGalleryCards(res.data))
       .catch((err) => console.log(err));

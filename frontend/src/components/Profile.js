@@ -14,7 +14,7 @@ function Profile() {
   console.log(user);
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/auth/profile/${user.id}`)
+      .get(`${process.env.REACT_APP_API_URL}/auth/profile/${user.id}`)
 
       .then((res) => setProfile(res.data))
       .catch((err) => console.log(err));

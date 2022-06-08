@@ -26,7 +26,7 @@ function Form() {
   const uploadImage = async (base64EncodedImage) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/posts`,
+        `${process.env.REACT_APP_API_URL}/posts`,
         {
           base64: base64EncodedImage,
           caption: captionState,
