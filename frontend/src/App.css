@@ -1,16 +1,69 @@
-/* .bg-for-everything {
-  background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sampleb_bg_for_project.jpg");
-} */
-
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Ubuntu:wght@300&display=swap');
 
-body {
-  font-family: 'Josefin Sans', cursive;
+.app-logo {
+  font-family: 'Fredoka One', cursive;
+}
+
+.links {
+font-family: 'Montserrat', sans-serif;
+}
+
+body, h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .custom-size-app {
   max-width: 85vw;
+}
+
+/* Page Backgrounds */
+.appbackground {
+  background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg");
+}
+
+/* Gallery Section */
+
+.Gallery-Section {
+  /* background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/william-arndt-MFLjLt2MojM-unsplash.jpg"); */
+}
+
+/* Main Gallery CSS */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+/* .user-profile {
+  background-image: url("/Users/blackwolvespurpleclothes/Desktop/creative_art_portal/frontend/public/images/pawel-czerwinski-HkAy-PdSqeA-unsplash.jpg");
+} */
+
+.thecarousel {
+  color: #fff;
 }
 /* Post / Landing Page */
 
@@ -22,6 +75,7 @@ body {
   color: #61dafb;
 text-shadow: cornsilk;
 }
+
 
 .Hero-Section {
 /* justify-content: center; */
@@ -121,12 +175,17 @@ padding-top: 1.5 rem;
 }
 
 /* .social-icons {
-width: 100%;
+/* width: 100%; */
 padding: 0 0 0 0;
-} */
 
 .container {
   width: 100%;
   margin-left: 0 0 0;
   padding: 0 0 0 0;
 }
+
+/* Gallery Section */
+/* .gallery-cards {
+
+
+} */

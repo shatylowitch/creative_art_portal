@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Carousel from "./Carousel";
 import Profile from "./Profile";
+import UserCard from "./UserCard";
 
 function Posts() {
   const [posts, setPosts] = useState([]);
@@ -24,7 +25,7 @@ function Posts() {
 
   return (
     <>
-        <Profile />
+      <Profile />
       <div className="container-fluid mh-100">
         <div className="Hero-Section row-5 justify-content-center">
           <div className="gap-4 text-center col-12">
@@ -47,7 +48,7 @@ function Posts() {
 
         <div className="container-fluid">
           <div className="d-flex mg-5 p-5 gap-5 justify-content-evenly">
-            <div className="card">
+            <div className="card border-info">
               <img
                 src="/images/dippyaman-nath-WTjoXtFZ2fw-unsplash.jpg"
                 className="card-img-top"
@@ -70,7 +71,7 @@ function Posts() {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card border-info">
               <img
                 src="/images/gradienta-el5ZXkPvd0o-unsplash.jpg"
                 className="card-img-top"
@@ -93,7 +94,7 @@ function Posts() {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card border-info">
               <img
                 src="/images/trevor-gerzen-fMgs4F9fTbU-unsplash.jpg"
                 className="card-img-top"
@@ -116,7 +117,7 @@ function Posts() {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card border-info">
               <img
                 src="/images/elena-mozhvilo-girJ8wuVrCA-unsplash.jpg"
                 className="card-img-top"

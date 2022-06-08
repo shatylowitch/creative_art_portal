@@ -26,14 +26,16 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <div className="navbar-nav ms-auto">
-              <div className="d-flex gap-4 nav-item nav-link m-3 fs-3">
+              <div className="d-flex gap-4 nav-item nav-link m-3 fs-3 links">
                 {!isAuthenticated ? (
                   <>
                     <Link to="/login">Login</Link>
                     <Link to="/signup">Signup</Link>
+                    <Link to="/gallery">Gallery</Link>
                   </>
                 ) : (
                   <>
+                    <Link to="/gallery">Gallery</Link>
                     <Link to="/protected/profile">Profile</Link>
                     <Link
                       to="login"
