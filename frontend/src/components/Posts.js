@@ -48,7 +48,7 @@ function Posts() {
 
         <div className="container-fluid">
           <div className="d-flex mg-5 p-5 gap-5 justify-content-evenly">
-            <div className="card">
+            <div className="card border-info">
               <img
                 src="/images/dippyaman-nath-WTjoXtFZ2fw-unsplash.jpg"
                 className="card-img-top"
@@ -71,7 +71,7 @@ function Posts() {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card border-info">
               <img
                 src="/images/gradienta-el5ZXkPvd0o-unsplash.jpg"
                 className="card-img-top"
@@ -94,7 +94,7 @@ function Posts() {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card border-info">
               <img
                 src="/images/trevor-gerzen-fMgs4F9fTbU-unsplash.jpg"
                 className="card-img-top"
@@ -117,7 +117,7 @@ function Posts() {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card border-info">
               <img
                 src="/images/elena-mozhvilo-girJ8wuVrCA-unsplash.jpg"
                 className="card-img-top"
